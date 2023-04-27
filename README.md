@@ -2,7 +2,7 @@
 For this segmentation task, I used the same dataset as for the previous task. I took 141 photos of 2 different types of energy drinks (Green Burn and Red Bull). But for this task it's necessary to change the objective task from object detection to instance segmentation.
 ## 2) Annotate photos for the segmentation task:
 For this task, I had to convert the bounding box annotations into the polygons for segmentation. Roboflow can do this automatically, so it's a much simpler step. After all the annotation and data augmentation I have the following results:
-![[report_images/1.png]]
+![img1](report_images/1.png)
 ## 3)Training a Mask RCNN model using detectron2
 For the Mask-RCNN  with the detecron2 I do the following steps:
 -   Install the data set from Roboflow in COCO format.
@@ -51,9 +51,9 @@ dataset = project.version(1).download("yolov8")
 
 ### mAP:
 - For the mask-RCNN
-![[report_images/2.png]]
+![img2](report_images/2.png)
 - For the YoloV8-nano
-![[report_images/3.png]]
+![img3](report_images/3.png)
 ### Speed:
 - For mask-RCNN it took 9 mins for training
 - For YoloV8-nano it took 0.144 hours (8.64 mins) for training
