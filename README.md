@@ -62,3 +62,11 @@ So, in terms of training speed it tooks pretty similar time.
 - 1890M of VRAM for mask-RCNN
 - 4.49G of VRAM for YoloV8-nano
 So, Yolo tooks 2 times more VRAM to train
+
+### Model predictions on the test set:
+Mask-RCNN on test set:
+![img4](report_images/4.png)
+
+Yolo:
+![img6](report_images/6.png)
+
